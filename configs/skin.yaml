@@ -1,0 +1,32 @@
+# general configs
+project_name: skin_rrl
+# extends
+extends: configs/default.yaml
+# general configs
+exp_name: skin_crl
+# model configs
+model:
+  arch: crl
+  backbone: resnet34
+  l1: 256
+  l2: 256
+  use_not: true
+  use_skip: true
+  temperature: 1
+  l2_weight: 5.0e-6
+# data configs
+data:
+  data_dir: /workspace/Datasets/fitzpatrick17k
+  dataset: skincon
+  batch_size: 64
+  img_size: 224
+  img_mean: [0.485, 0.456, 0.406]
+  img_std: [0.229, 0.224, 0.225]
+  n_concepts: 48
+  n_classes: 2
+  fold: 0
+# opt configs
+opt:
+  optimizer: adamw
+  lr: 5.0e-4
+  max_epochs: 300

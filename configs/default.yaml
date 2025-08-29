@@ -1,0 +1,23 @@
+# general configs
+project_name: concept_rule_learner
+exp_name: exp
+seed: 3
+device: 0
+
+# logger configs
+log:
+  logger: wandb
+  save_dir: ./logs
+  log_every_n_steps: 10
+  val_every_n_epoch: 1
+
+# checkpoint saving
+ckpt:
+  saving: true
+  save_dir: ./checkpoints
+
+# opt configs
+opt:
+  optimizer: adamw
+  lr: 0.0001
+  max_epochs: 300

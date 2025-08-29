@@ -1,0 +1,8 @@
+{
+  "reportIncompatibleMethodOverride": "none",
+  "reportPrivateImportUsage": "none",
+  "reportArgumentType": "none",
+  "reportAttributeAccessIssue": "none",
+  "reportCallIssue": "none",
+  "reportPossiblyUnboundVariable": "none"
+}
